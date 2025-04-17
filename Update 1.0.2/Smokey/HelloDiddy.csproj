@@ -1,0 +1,256 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+    <BaseOutputPath></BaseOutputPath>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Mod\Patches - Copy\**" />
+    <EmbeddedResource Remove="Mod\Patches - Copy\**" />
+    <None Remove="Mod\Patches - Copy\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Mod\UI\UICoroutineRunner.cs" />
+    <Compile Remove="RenderHook.cs" />
+    <Compile Remove="RHook.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\net6\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppAeLa.EasyFeedback">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Il2CppAeLa.EasyFeedback.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppAeLa.EasyFeedback.InputSystemSupport">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Il2CppAeLa.EasyFeedback.InputSystemSupport.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppAmplifyImpostors">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Il2CppAmplifyImpostors.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppAmplifyImpostors.Runtime">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Il2CppAmplifyImpostors.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppAstarPathfindingProject">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Il2CppAstarPathfindingProject.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppBoxophobic.AtmosphericHeightFog.Runtime">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Il2CppBoxophobic.AtmosphericHeightFog.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppBoxophobic.Utils.Scripts">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Il2CppBoxophobic.Utils.Scripts.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppCinemachine">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Il2CppCinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2Cppcom.rlabrecque.steamworks.net">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Il2Cppcom.rlabrecque.steamworks.net.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppCorgiGodRays">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Il2CppCorgiGodRays.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppEasyButtons">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Il2CppEasyButtons.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppEdgegap">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Il2CppEdgegap.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppFishNet.Demos">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Il2CppFishNet.Demos.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppFishNet.Runtime">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Il2CppFishNet.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppGameKit.Dependencies">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Il2CppGameKit.Dependencies.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppGameKit.Utilities">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Il2CppGameKit.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppHBAO.Demo.Runtime">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Il2CppHBAO.Demo.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppHBAO.Demo.Universal.Runtime">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Il2CppHBAO.Demo.Universal.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppHBAO.Runtime">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Il2CppHBAO.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppHBAO.Universal.Runtime">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Il2CppHBAO.Universal.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppHSVPicker">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Il2CppHSVPicker.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppInterop.Common">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\net6\Il2CppInterop.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppInterop.Generator">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\net6\Il2CppInterop.Generator.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppInterop.HarmonySupport">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\net6\Il2CppInterop.HarmonySupport.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppInterop.Runtime">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\net6\Il2CppInterop.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppLokoSolo.PinchableScrollRect">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Il2CppLokoSolo.PinchableScrollRect.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppMono.Security">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Il2CppMono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Il2Cppmscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppNewtonsoft.Json">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Il2CppNewtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppPathfinding.ClipperLib">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Il2CppPathfinding.ClipperLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppPathfinding.Ionic.Zip.Reduced">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Il2CppPathfinding.Ionic.Zip.Reduced.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppPathfinding.Poly2Tri">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Il2CppPathfinding.Poly2Tri.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppRadiantGI">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Il2CppRadiantGI.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppRootMotion">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Il2CppRootMotion.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppRuntimePreviewGenerator.Runtime">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Il2CppRuntimePreviewGenerator.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2Cppsc.stylizedgrass.runtime">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Il2Cppsc.stylizedgrass.runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2Cppsc.stylizedwater2.runtime">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Il2Cppsc.stylizedwater2.runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppStylizedWaterForURP">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Il2CppStylizedWaterForURP.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Il2CppSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Configuration">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Il2CppSystem.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Core">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Il2CppSystem.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Data">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Il2CppSystem.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Drawing">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Il2CppSystem.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.IO.Compression">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Il2CppSystem.IO.Compression.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.IO.Compression.FileSystem">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Il2CppSystem.IO.Compression.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Net.Http">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Il2CppSystem.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Numerics">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Il2CppSystem.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Runtime.Serialization">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Il2CppSystem.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Xml">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Il2CppSystem.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Xml.Linq">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Il2CppSystem.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppVisualDesignCafe.Nature">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Il2CppVisualDesignCafe.Nature.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppVisualDesignCafe.Packages">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Il2CppVisualDesignCafe.Packages.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppVisualDesignCafe.ShaderX">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Il2CppVisualDesignCafe.ShaderX.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2Cpp__Generated">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Il2Cpp__Generated.dll</HintPath>
+    </Reference>
+    <Reference Include="MelonLoader">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\net35\MelonLoader.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\..\..\Games\Schedule I\Schedule I\Schedule I\MelonLoader\net6\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Tomlet">
+      <HintPath>..\..\..\..\..\..\Games\Schedule I\Schedule I\Schedule I\MelonLoader\net6\Tomlet.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\..\..\..\..\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>..\..\..\..\..\..\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\..\..\..\..\..\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\..\..\..\..\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>C:\Games\Schedule I\Schedule I\Schedule I\MelonLoader\Il2CppAssemblies\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="copy /Y &quot;$(TargetDir)$(TargetName).dll&quot; &quot;C:\Games\Schedule I\Schedule I\Schedule I\Mods\$(TargetName).dll&quot;" />
+  </Target>
+
+</Project>
