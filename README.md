@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/c7c1a139-2631-4f65-91b9-cead3f6dd4b3" alt="" height="200">
+  <img src="https://github.com/user-attachments/assets/c7c1a139-2631-4f65-91b9-cead3f6dd4b3" alt="" height="300">
 </div>
 
 # <div align="center">HelloDiddy Mod</div>
