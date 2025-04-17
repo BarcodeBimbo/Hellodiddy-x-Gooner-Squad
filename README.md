@@ -7,7 +7,7 @@
 ## Preview
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/2c524f4a-ee4c-402d-a3c9-b70a7961cde9" alt="" height="200">
+  <img src="https://github.com/user-attachments/assets/2c524f4a-ee4c-402d-a3c9-b70a7961cde9" alt="" height="600">
 </div>
 
 ## Features
