@@ -76,4 +76,4 @@ Once the mod is installed and the game is running, press the configured menu key
 
 ## License
 
-This mod is released under the **GNU GENERAL PUBLIC LICENSE**. See [LICENSE](./LICENSE) for more details.
+This mod is released under the **GENERAL PUBLIC LICENSE**. See [LICENSE](./LICENSE) for more details.
