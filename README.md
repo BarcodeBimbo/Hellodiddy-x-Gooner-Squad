@@ -2,10 +2,10 @@
   <img src="https://github.com/user-attachments/assets/c7c1a139-2631-4f65-91b9-cead3f6dd4b3" alt="" height="200">
 </div>
 
-**HelloDiddy Mod** is a Schedule I game modification library designed to enhance gameplay features, tweak settings, and provide extra functionalities to customize the game experience. This mod includes options for player interactions, combat tweaks, world controls, and much more, allowing users to tailor their gameplay according to personal preferences.
+# <div align="center">HelloDiddy Mod</div>
+is a Schedule I game modification library designed to enhance gameplay features, tweak settings, and provide extra functionalities to customize the game experience. This mod includes options for player interactions, combat tweaks, world controls, and much more, allowing users to tailor their gameplay according to personal preferences.
 
 ## Preview
-
 <div align="center">
   <img src="https://github.com/user-attachments/assets/2c524f4a-ee4c-402d-a3c9-b70a7961cde9" alt="" height="600">
 </div>
