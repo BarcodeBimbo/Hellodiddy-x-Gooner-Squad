@@ -72,6 +72,7 @@ Once the mod is installed and the game is running, press the configured menu key
 - **Contributors**: GoonerToons, Goonernator
 - **NexusMods**: GoonerToons, Goonernator
 - **Discord**: ikickfatbitches, goonernator5000
+- **Source Base**: Smokey, [Base Repo](https://github.com/thecodefodder/Smokey) 
 
 ## License
 
