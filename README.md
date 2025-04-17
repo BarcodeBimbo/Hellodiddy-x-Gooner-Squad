@@ -74,6 +74,9 @@ Once the mod is installed and the game is running, press the configured menu key
 - **Discord**: ikickfatbitches, goonernator5000
 - **Source Base**: [Smokey](https://github.com/thecodefodder/Smokey), [LICENSE](https://github.com/thecodefodder/Smokey/blob/main/LICENSE)
 
+## Lastest Repack / News
+ - [Schedule One X GoonPack](https://t.me/+txBLpXsoB15kYjAx)
+
 ## License
 
 This mod is released under the **GENERAL PUBLIC LICENSE**. See [LICENSE](./LICENSE) for more details.
